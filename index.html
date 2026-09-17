@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentina Beauty Center</title>
+    
+    <!-- Fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navegación principal -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.jpeg" alt="Valentina Beauty Center Logo" class="logo-img">
+            <div class="logo-text">
+                Valentina
+                <span>BEAUTY CENTER</span>
+            </div>
+        </div>
+
+        <!-- Menú Hamburguesa ubicado en la esquina superior derecha -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <!-- Overlay (Fondo oscuro al abrir el menú) -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Menú Hamburguesa Desplegable Lateral -->
+    <nav class="hamburger-menu" id="hamburgerMenu">
+        <div class="menu-header">
+            <span class="menu-brand">Valentina Beauty Center</span>
+            <button class="close-btn" id="closeBtn" aria-label="Cerrar menú">&times;</button>
+        </div>
+
+        <!-- Opciones de Navegación -->
+        <ul class="menu-links">
+            <li><a href="#" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="servicios.html"><i class="fas fa-spa"></i> Servicios</a></li>
+            <li><a href="precios.html"><i class="fas fa-tags"></i> Pricing Page</a></li>
+            <li><a href="galeria.html"><i class="fas fa-images"></i> Galería</a></li>
+            <li><a href="sobre nosotros.html"><i class="fas fa-heart"></i> Sobre Nosotros</a></li>
+            <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+
+        <!-- Información de contacto y reserva trasladada al interior del menú -->
+        <div class="menu-footer">
+            <a href="https://wa.me/13054299946?text=Hola,%20me%20gustaría%20reservar%20una%20cita" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-menu-whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp Reservar Cita
+            </a>
+
+            <div class="menu-contact-info">
+                <a href="tel:+13054299946" class="contact-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>(305) 429-9946</span>
+                </a>
+                <a href="https://www.instagram.com/valentinabeautycentermia" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="contact-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>@valentinabeautycentermia</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Sección Principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Realzando tu belleza<br><i>con amor, dedicación<br>y profesionalismo</i> ♥</h1>
+            <p>En Valentina Beauty Center te ofrecemos servicios de alta calidad en un ambiente privado, relajante y diseñado especialmente para ti.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary"><i class="far fa-calendar-alt"></i> Reservar Cita</a>
+                <a href="#" class="btn-secondary">Ver Servicios</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Valentina Beauty Center Interior">
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="services-section">
+        <div class="section-title">
+            <div class="subtitle">NUESTROS SERVICIOS</div>
+            <h2>Belleza para cada parte de ti</h2>
+        </div>
+
+        <div class="services-grid">
+            <!-- Card 1: Faciales -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-spa"></i></div>
+                <h3>Faciales</h3>
+                <ul>
+                    <li>Facial Regular</li>
+                    <li>Facial Profundo + Luz LED</li>
+                    <li>Facial Profundo con Microdermoabrasión</li>
+                    <li>Facial con Efecto Lifting</li>
+                    <li>Facial Anti-Aging</li>
+                    <li>Peeling</li>
+                    <li>Dermaplaning</li>
+                </ul>
+                <a href="#" class="btn-card">Ver Más</a>
+            </div>
+
+            <!-- Card 2: Tratamientos Corporales -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-female"></i></div>
+                <h3>Tratamientos Corporales</h3>
+                <ul>
+                    <li>Maderoterapia</li>
+                    <li>Maderoterapia + Sauna</li>
+                </ul>
+                <a href="#" class="btn-card">Ver Más</a>
+            </div>
+
+            <!-- Card 3: Waxing -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-hands-wash"></i></div>
+                <h3>Waxing <br><small class="card-subtitle">(DEPILACIÓN CON CERA)</small></h3>
+                <ul>
+                    <li>Full Brazilian</li>
+                    <li>Piernas Completas</li>
+                    <li>Axilas</li>
+                    <li>Upper Lip (Labio Superior)</li>
+                    <li>Nariz</li>
+                    <li>Oídos</li>
+                </ul>
+                <a href="#" class="btn-card">Ver Más</a>
+            </div>
+
+            <!-- Card 4: Tratamientos Especiales -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-gem"></i></div>
+                <h3>Tratamientos Especiales</h3>
+                <ul>
+                    <li>Maderoterapia</li>
+                    <li>Maderoterapia + Sauna</li>
+                </ul>
+                <a href="#" class="btn-card">Ver Más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner de Combos Recomendados -->
+    <section class="combos-section">
+        <div class="combos-header">
+            <h2>Combos<br>Recomendados<br>♥</h2>
+        </div>
+        <div class="combos-grid">
+            <div class="combo-card">
+                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=150&q=80" class="combo-img" alt="Facial Profundo + Luz LED">
+                <p>Facial Profundo + Luz LED</p>
+                <div class="combo-price">$120</div>
+            </div>
+            <div class="combo-card">
+                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=300&q=80" class="combo-img" alt="Facial Anti-Aging + Maderoterapia">
+                <p>Facial Anti-Aging + Maderoterapia</p>
+                <div class="combo-price">$200</div>
+            </div>
+            <div class="combo-card">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=150&q=80" class="combo-img" alt="Maderoterapia + Sauna">
+                <p>Maderoterapia + Sauna</p>
+                <div class="combo-price">$120</div>
+            </div>
+            <div class="combo-card">
+                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=150&q=80" class="combo-img" alt="Facial Completo">
+                <p>Facial Completo (Limpieza + Peeling + Luz LED)</p>
+                <div class="combo-price">$180</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barra de Características -->
+    <div class="features-bar">
+        <div class="feature-item">
+            <i class="far fa-calendar-check"></i>
+            <span>Consulta gratuita</span>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-spa"></i>
+            <span>Ambiente privado y relajante</span>
+        </div>
+        <div class="feature-item">
+            <i class="far fa-comments"></i>
+            <span>Citas por DM o WhatsApp</span>
+        </div>
+    </div>
+
+    <!-- Sección de Información -->
+    <div class="info-section">
+        <div class="about-box">
+            <div class="info-title">Sobre Nosotros ♥</div>
+            <div class="about-content">
+                <div class="about-text">
+                    En Valentina Beauty Center, nuestra misión es resaltar tu belleza natural con tratamientos personalizados y productos de alta calidad. ¡Te esperamos para consentirte!
+                </div>
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=300&q=80" class="about-img" alt="Sobre Nosotros">
+            </div>
+            <a href="#" class="btn-primary btn-about">Reservar Cita</a>
+        </div>
+
+        <div class="location-box">
+            <div class="info-title">Visítanos</div>
+            <div class="location-content">
+                <div class="location-info">
+                    <p><i class="fas fa-map-marker-alt icon-pink"></i> 4888 NW 183 Street,<br>Miami Gardens, FL 33055</p>
+                    <a href="#" class="btn-secondary btn-location">Cómo llegar</a>
+                </div>
+                <div class="map-placeholder">
+                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=300&q=80" alt="Mapa Ubicación">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página / Footer -->
+    <footer>
+        <div class="logo footer-logo">
+            <i class="fas fa-leaf"></i> Valentina
+        </div>
+        <div class="social-links">
+            <span>Síguenos en Instagram</span>
+            <a href="https://www.instagram.com/valentinabeautycentermia" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> @valentinabeautycentermia</a>
+        </div>
+        <div>
+            © 2026 Valentina Beauty Center. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Script JavaScript para abrir y cerrar el menú -->
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        function openMenu() {
+            hamburgerMenu.classList.add('active');
+            menuOverlay.classList.add('active');
+        }
+
+        function closeMenu() {
+            hamburgerMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+        }
+
+        hamburgerBtn.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        menuOverlay.addEventListener('click', closeMenu);
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentina Beauty Center</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .font-script {
+      font-family: 'Great Vibes', cursive;
+    }
+    .font-sans {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-stone-950 font-sans min-h-screen w-full m-0 p-0 overflow-x-hidden">
+
+  <!-- Main Full-Screen Container -->
+  <div class="relative w-full min-h-screen bg-stone-900 text-white grid grid-cols-1 lg:grid-cols-12 overflow-hidden">
+    
+    <!-- Background Image with Overlay for Mobile/Tablet -->
+    <div class="absolute inset-0 z-0 lg:hidden">
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=1000" alt="Valentina Beauty Center" class="w-full h-full object-cover opacity-25" />
+      <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-900/90 to-stone-950/70"></div>
+    </div>
+
+    <!-- Left Content Column -->
+    <div class="relative z-10 p-6 sm:p-10 lg:p-16 lg:col-span-7 flex flex-col justify-between min-h-screen">
+      
+      <!-- Top Section: Header & Services -->
+      <div>
+        <!-- Header / Branding -->
+        <div class="text-center lg:text-left mb-8">
+          <h1 class="font-script text-6xl lg:text-7xl text-pink-300 drop-shadow-lg leading-none">
+            Valentina <i class="fa-solid fa-heart text-sm align-top text-pink-400 animate-pulse"></i>
+          </h1>
+          <p class="tracking-[0.3em] text-xs lg:text-sm font-semibold uppercase text-stone-300 mt-2">
+            BEAUTY CENTER <span class="text-pink-400">♥️</span>
+          </p>
+        </div>
+
+        <!-- Tagline -->
+        <div class="text-center lg:text-left mb-10">
+          <p class="text-xl text-stone-200 font-light">Ven a disfrutar la</p>
+          <p class="font-script text-5xl lg:text-6xl text-pink-200 my-1">experiencia</p>
+          <div class="inline-block bg-gradient-to-r from-pink-600 to-pink-500 text-white font-bold text-sm lg:text-base px-6 py-2 rounded-full uppercase tracking-wider shadow-lg shadow-pink-500/20 border border-pink-400/30">
+            de todo en un solo lugar
+          </div>
+        </div>
+
+        <!-- Services Grid (2 Columnas en pantallas grandes para aprovechar espacio) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          
+          <!-- Service Item 1 -->
+          <div class="flex items-center gap-4 bg-stone-800/60 backdrop-blur-md p-4 rounded-2xl border border-pink-500/20 hover:border-pink-500/50 hover:bg-stone-800/80 transition duration-300 shadow-md">
+            <div class="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center shrink-0 border border-pink-400/30 text-pink-300">
+              <i class="fa-solid fa-sparkles text-xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm tracking-wide uppercase text-pink-100">FACIALES</h3>
+              <p class="text-xs text-stone-300 mt-0.5">Limpia, revitaliza y rejuvenece tu piel.</p>
+            </div>
+          </div>
+
+          <!-- Service Item 2 -->
+          <div class="flex items-center gap-4 bg-stone-800/60 backdrop-blur-md p-4 rounded-2xl border border-pink-500/20 hover:border-pink-500/50 hover:bg-stone-800/80 transition duration-300 shadow-md">
+            <div class="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center shrink-0 border border-pink-400/30 text-pink-300">
+              <i class="fa-solid fa-spa text-xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm tracking-wide uppercase text-pink-100">WAX</h3>
+              <p class="text-xs text-stone-300 mt-0.5">Piel suave, lisa y sin irritación.</p>
+            </div>
+          </div>
+
+          <!-- Service Item 3 -->
+          <div class="flex items-center gap-4 bg-stone-800/60 backdrop-blur-md p-4 rounded-2xl border border-pink-500/20 hover:border-pink-500/50 hover:bg-stone-800/80 transition duration-300 shadow-md">
+            <div class="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center shrink-0 border border-pink-400/30 text-pink-300">
+              <i class="fa-solid fa-eye text-xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm tracking-wide uppercase text-pink-100">
+                POSTURA DE PESTAÑAS <span class="font-script text-pink-300 capitalize text-base font-normal">por grupito</span>
+              </h3>
+              <p class="text-xs text-stone-300 mt-0.5">Mirada natural, delicada y hermosa.</p>
+            </div>
+          </div>
+
+          <!-- Service Item 4 -->
+          <div class="flex items-center gap-4 bg-stone-800/60 backdrop-blur-md p-4 rounded-2xl border border-pink-500/20 hover:border-pink-500/50 hover:bg-stone-800/80 transition duration-300 shadow-md">
+            <div class="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center shrink-0 border border-pink-400/30 text-pink-300">
+              <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm tracking-wide uppercase text-pink-100">TINTADO DE CEJAS Y PESTAÑAS</h3>
+              <p class="text-xs text-stone-300 mt-0.5">Resalta tu mirada de forma natural.</p>
+            </div>
+          </div>
+
+          <!-- Service Item 5 -->
+          <div class="flex items-center gap-4 bg-stone-800/60 backdrop-blur-md p-4 rounded-2xl border border-pink-500/20 hover:border-pink-500/50 hover:bg-stone-800/80 transition duration-300 shadow-md">
+            <div class="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center shrink-0 border border-pink-400/30 text-pink-300">
+              <i class="fa-solid fa-hands text-xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm tracking-wide uppercase text-pink-100">MASAJES CORPORALES</h3>
+              <p class="text-xs text-stone-300 mt-0.5">Relajación, bienestar y renovación total.</p>
+            </div>
+          </div>
+
+          <!-- Service Item 6 -->
+          <div class="flex items-center gap-4 bg-stone-800/60 backdrop-blur-md p-4 rounded-2xl border border-pink-500/20 hover:border-pink-500/50 hover:bg-stone-800/80 transition duration-300 shadow-md">
+            <div class="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center shrink-0 border border-pink-400/30 text-pink-300">
+              <i class="fa-solid fa-star text-xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm tracking-wide uppercase text-pink-100">Y MÁS...</h3>
+              <p class="text-xs text-stone-300 mt-0.5">¡Porque mereces lo mejor, de pies a cabeza!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Footer Bar -->
+      <div class="mt-12 pt-6 border-t border-pink-500/30 flex flex-wrap items-center justify-between gap-4 text-xs font-semibold tracking-wider text-pink-200">
+        <div class="flex items-center gap-2 bg-pink-500/10 px-4 py-2 rounded-full border border-pink-500/20">
+          <i class="fa-solid fa-location-dot text-pink-400"></i>
+          <span>MIAMI GARDENS</span>
+        </div>
+        <a href="https://instagram.com/Valentinabeautycentermia" target="_blank" class="flex items-center gap-2 bg-pink-500/10 px-4 py-2 rounded-full border border-pink-500/20 hover:bg-pink-500/20 transition">
+          <i class="fa-brands fa-instagram text-pink-400 text-base"></i>
+          <span>IG: Valentinabeautycentermia</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Right Image Column (Desktop Full Height) -->
+    <div class="hidden lg:block lg:col-span-5 relative min-h-screen">
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=1000" alt="Tratamiento de belleza Valentina Beauty Center" class="w-full h-full object-cover object-center" />
+      
+      <!-- Subtle Overlay Gradient -->
+      <div class="absolute inset-0 bg-gradient-to-r from-stone-900 via-stone-900/40 to-transparent"></div>
+      
+      <!-- Slogan Banner Over Image -->
+      <div class="absolute bottom-16 right-12 left-12 p-8 rounded-3xl bg-stone-950/40 backdrop-blur-md border border-white/10 text-right">
+        <p class="font-script text-5xl text-pink-200 drop-shadow-md leading-tight">
+          Belleza, bienestar <br />
+          y confianza en <br />
+          un solo lugar.
+        </p>
+        <div class="text-pink-400 text-3xl mt-3">♥️</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
