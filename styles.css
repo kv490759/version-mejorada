@@ -665,3 +665,53 @@ footer a {
     border-radius: 4px;
     transition: all 0.3s ease;
 }
+
+
+/* Estilos para la sección de tratamientos */
+.galeria {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    color: #4a3531;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+/* Rejilla adaptativa */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tarjetas e imágenes */
+.galeria-item {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    aspect-ratio: 4 / 5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Efectos al pasar el mouse */
+.galeria-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(184, 137, 126, 0.25);
+}
+
+.galeria-item:hover img {
+    transform: scale(1.08);
+}
